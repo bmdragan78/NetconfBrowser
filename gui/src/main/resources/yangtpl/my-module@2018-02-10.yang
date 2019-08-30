@@ -1,0 +1,51 @@
+module my-module {
+
+    yang-version 1;
+
+    namespace "urn:ietf:params:xml:ns:yang:my-module";
+
+    prefix "my-module";
+
+    organization "my-module Description";
+
+    contact "email: user@org.com";
+
+    description "This module is a basic yang file";
+
+    revision "2018-02-10" {
+      description "Initial revision.";
+      reference "RFC XXX";
+    }
+    
+    container containerX {
+
+	    leaf leafX {
+	      type int32;
+	      config false;
+	      description "Added by me";
+	    }
+	    
+	    leaf leafY {
+	      type int32;
+	      config false;
+	      description "Added by me";
+	    }
+	    
+	    list listM {
+      		key "col1";
+      		description "List example";
+
+
+		    leaf col1 {
+		      type int32;
+		      description "Column one of listM";
+		    }
+		
+		    leaf col2 {
+		      type string;
+		      description "Column two of listM";
+		    }
+		}
+	}
+	
+}

@@ -1,0 +1,105 @@
+module my-module {
+
+    yang-version 1;
+
+    namespace "urn:ietf:params:xml:ns:yang:my-module";
+
+    prefix my-module;
+
+    organization "my-module Description";
+
+    contact "email: user@org.com";
+
+    description "This module is a basic yang file";
+
+    revision "2018-02-10" {
+      description "Initial revision.";
+      reference "RFC XXX";
+    }
+    
+    container CONT1 {
+	    
+	   leaf LEAF2 {
+	      type string;
+	      description "Leaf";
+	    }
+
+	   leaf-list LEAF_LIST2 {
+		 type string;
+		 description "Leaf list";
+	    }
+
+
+	    list LIST2 {
+      		key "LEAF3a";
+      		description "List";
+
+		    leaf LEAF3a {
+		      type int32;
+		      description "Column one of listM";
+		    }
+		
+		    leaf LEAF3b {
+		      type string;
+		      description "Column two of listM";
+		    }
+
+		    leaf-list LEAF_LIST3 {
+		       type string;
+		       description "Leaf list";
+	    	    }
+
+	 	    list LIST3 {
+      			key "LEAF4";
+	      		description "List";
+
+		    	leaf LEAF4 {
+		      		type int32;
+		      		description "Column one of listM";
+		    	}
+		    }
+ 		    container CONT3 {
+		    }
+	     }
+
+	     container CONT2 {
+
+ 			leaf LEAF3 {
+	      			type string;
+	      			description "Leaf";
+	    		}
+
+	   		leaf-list LEAF_LIST3 {
+		 		type string;
+		 		description "Leaf list";
+	    		}
+
+
+	    		list LIST3 {
+      				key "LEAF4a";
+      				description "List";
+
+		    		leaf LEAF4a {
+		     			type string;
+		      			description "Column one of listM";
+		    		}
+		
+		    		leaf LEAF4b {
+		      			type string;
+		      			description "Column two of listM";
+		    		}
+
+		    		leaf-list LEAF_LIST4 {
+		       			type string;
+		       			description "Leaf list";
+	    	    		}	 	    
+ 		   
+	     }
+ container CONT3 {
+		    }
+	     }
+
+
+	}
+	
+}

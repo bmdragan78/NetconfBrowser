@@ -1,0 +1,130 @@
+#runBtn{
+	-fx-background-color: #00b7c3;
+	-fx-background-radius: 0;
+	-fx-padding : 12 5 12 5;
+	-fx-text-fill: white;
+	-fx-font-weight: normal;
+}
+
+#runBtnIcon{
+	-fx-text-fill: white;
+	-fx-fill: white;
+}
+
+.boldFont{
+	-fx-font-family: 'SourceSansPro Bold';	
+}
+
+
+.gridPane {
+	 -fx-background-color : #edf1f4;
+}
+
+.gridPaneLabel {
+  -fx-text-fill : black;
+  -fx-background-color : #edf1f4;
+  
+  -fx-max-width : Infinity;
+  -fx-max-height : Infinity;
+  -fx-alignment : TOP_LEFT;
+  -fx-padding : 5 45 5 20;/*top, right, bottom, and left */
+  
+  -fx-min-width : 160;
+}
+
+
+.gridPaneTextField {
+  -fx-min-width : 200;
+  -fx-max-width : Infinity;
+  -fx-max-height : Infinity;
+  -fx-alignment : TOP_LEFT;
+  -fx-padding : 5 60 5 10;
+  
+  -fx-focus-color: transparent; 
+  
+  -fx-text-fill : black;
+  -fx-background-color : #d8dde2;
+}
+
+.gridPaneTextField1 {
+  -fx-min-width : 200;
+  -fx-max-width : Infinity;
+  -fx-max-height : Infinity;
+  -fx-alignment : TOP_LEFT;
+  -fx-padding : 5 60 5 10;
+  
+  -fx-focus-color: transparent; 
+  
+  -fx-text-fill : black;
+  -fx-background-color : white;
+}
+
+
+.gridPaneSaveBtn {
+  -fx-min-height : 36;
+  -fx-min-width : 120;
+  -fx-max-height : Infinity;
+  -fx-font-family: 'SourceSansPro SemiBold';
+  
+  -fx-text-fill : black;
+  -fx-background-color : #edf1f4;
+  -fx-background-radius: 18px;
+
+  -fx-border-radius: 18px;
+  -fx-border-width: 2px;
+  -fx-border-color: #00b7c3;/*#ffb900 */
+  
+}
+
+
+.gridPaneTextArea {
+  -fx-max-width : Infinity;
+  -fx-max-height : Infinity;
+  -fx-alignment : TOP_LEFT;
+  -fx-padding : 0 0 0 0;
+  
+  -fx-wrap-text : true;
+  -fx-focus-color: transparent; 
+  
+  -fx-text-fill : black;
+  -fx-background-color : #d8dde2;
+}
+
+
+
+.keyword {
+    -fx-fill: purple;
+    -fx-font-weight: bold;
+}
+.semicolon {
+    -fx-font-weight: bold;
+}
+.paren {
+    -fx-fill: firebrick;
+    -fx-font-weight: bold;
+}
+.bracket {
+    -fx-fill: darkgreen;
+    -fx-font-weight: bold;
+}
+.brace {
+    -fx-fill: teal;
+    -fx-font-weight: bold;
+}
+.string {
+    -fx-fill: blue;
+}
+
+.comment {
+	-fx-fill: cadetblue;
+}
+
+.paragraph-box:has-caret {
+    -fx-background-color: #ffb900;
+}
+
+#fileCodeArea {
+	-fx-font-size: 13;
+	-fx-font-family: monospaced;
+}
+

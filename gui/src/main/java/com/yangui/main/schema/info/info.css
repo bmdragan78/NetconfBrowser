@@ -1,0 +1,65 @@
+
+.boldFont{
+	-fx-font-family: 'SourceSansPro Bold';	
+}
+
+
+.gridPane {
+	 -fx-background-color : #edf1f4;
+}
+
+.gridPaneLabel {
+  -fx-text-fill : black;
+  -fx-background-color : #edf1f4;
+  
+  -fx-max-width : Infinity;
+  -fx-max-height : Infinity;
+  -fx-alignment : TOP_LEFT;
+  -fx-padding : 5 45 5 20;/*top, right, bottom, and left */
+  
+  -fx-min-width : 160;
+}
+
+
+.gridPaneTextField {
+  -fx-min-width : 200;
+  -fx-max-width : Infinity;
+  -fx-max-height : Infinity;
+  -fx-alignment : TOP_LEFT;
+  -fx-padding : 5 60 5 10;
+  
+  -fx-focus-color: transparent; 
+  
+  -fx-text-fill : black;
+  -fx-background-color : #d8dde2;
+}
+
+
+.gridPaneSaveBtn {
+  -fx-min-width : 160;
+  -fx-max-height : Infinity;
+  -fx-font-family: 'SourceSansPro SemiBold';
+  
+  -fx-text-fill : black;
+  -fx-background-color : #edf1f4;
+  -fx-background-radius: 18px;
+
+  -fx-border-radius: 18px;
+  -fx-border-width: 2px;
+  -fx-border-color: #00b7c3;/*#ffb900 */
+}
+
+
+.gridPaneTextArea {
+  -fx-max-width : Infinity;
+  -fx-max-height : Infinity;
+  -fx-alignment : TOP_LEFT;
+  -fx-padding : 0 0 0 0;
+  
+  -fx-wrap-text : true;
+  -fx-focus-color: transparent; 
+  
+  -fx-text-fill : black;
+  -fx-background-color : #d8dde2;
+}
+

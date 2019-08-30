@@ -1,0 +1,26 @@
+.filterBtn {
+  -fx-min-height : 36;
+  -fx-min-width : 120;
+  -fx-max-width : Infinity;
+  -fx-max-height : Infinity;
+  -fx-font-family: 'SourceSansPro SemiBold';
+
+  -fx-text-fill : white;
+  -fx-background-color : #434453;
+  -fx-background-radius: 18px;
+
+  -fx-border-radius: 18px;
+  -fx-border-width: 2px;
+  -fx-border-color: #00b7c3;
+  
+  -jfx-button-type: RAISED;
+}
+
+.buttonIcon {
+	-fx-fill: white;
+}
+
+
+.getopPane{
+	-fx-padding : 12 24 16 24;
+}

@@ -1,0 +1,16 @@
+.settings/
+.git/
+.metadata/
+.recommenders/
+**/target
+**/cluster
+*.class
+*.project
+*.pyc
+*.log
+*.jar
+.classpath
+
+/YWorks/
+/YWorks2/
+

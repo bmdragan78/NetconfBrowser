@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane fx:id="deviatePane" stylesheets="@deviate.css" hgap="1" vgap="10" fx:controller="com.yangui.main.schema.deviate.DeviatePresenter" xmlns="http://javafx.com/javafx/8.0.151" xmlns:fx="http://javafx.com/fxml/1">
+        <columnConstraints>
+          <ColumnConstraints hgrow="NEVER" />
+          <ColumnConstraints hgrow="NEVER" />
+          <ColumnConstraints hgrow="ALWAYS" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints vgrow="NEVER" />
+          <RowConstraints vgrow="NEVER" />
+          <RowConstraints vgrow="NEVER" />
+          <RowConstraints vgrow="NEVER" />
+          <RowConstraints vgrow="NEVER" />
+          <RowConstraints vgrow="NEVER" />
+          <RowConstraints vgrow="NEVER" />
+          <RowConstraints vgrow="NEVER" />
+        </rowConstraints>
+         <children>
+            <Label 		 text=""	 																			GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="1"></Label><!--Empty Header--> 
+            <Label 		 text=""   																    			GridPane.columnIndex="1" GridPane.rowIndex="0" GridPane.columnSpan="2"></Label><!--Empty Header --> 
+            
+            
+            <Label 			styleClass="gridPaneLabel, boldFont" text="Property" 								GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.columnSpan="1"/><!--Property Header--> 
+            <Label 			styleClass="gridPaneLabel, boldFont" text="Value" 									GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.columnSpan="2"/><!--Value Header--> 
+            
+            <Label 			styleClass="gridPaneLabel" text="Deviate Kind" 										GridPane.columnIndex="0" GridPane.rowIndex="2" GridPane.columnSpan="1"/><!--Kind-->
+            <TextField  	styleClass="gridPaneTextField" fx:id="kindTxt" editable="false" 					GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.columnSpan="2"/>
+            
+            <Label 			styleClass="gridPaneLabel" text="Default Value" 									GridPane.columnIndex="0" GridPane.rowIndex="3" GridPane.columnSpan="1"/><!--Default-->
+            <TextField   	styleClass="gridPaneTextField" fx:id="defaultValueTxt" editable="false"				GridPane.columnIndex="1" GridPane.rowIndex="3" GridPane.columnSpan="2"/>
+            
+            <Label 			styleClass="gridPaneLabel" text="Units"		 										GridPane.columnIndex="0" GridPane.rowIndex="4" GridPane.columnSpan="1"/><!--Units-->
+            <TextField  	styleClass="gridPaneTextField" fx:id="unitsTxt" editable="false" 				    GridPane.columnIndex="1" GridPane.rowIndex="4" GridPane.columnSpan="2"/>
+            
+            <Label 			styleClass="gridPaneLabel" text="Type" 												GridPane.columnIndex="0" GridPane.rowIndex="5" GridPane.columnSpan="1"/><!--Type-->
+            <TextArea  		styleClass="gridPaneTextArea" fx:id="typeTxt" editable="false"		 				GridPane.columnIndex="1" GridPane.rowIndex="5" GridPane.columnSpan="2"/>
+            
+            <Label 			styleClass="gridPaneLabel" text="Must" 												GridPane.columnIndex="0" GridPane.rowIndex="6" GridPane.columnSpan="1"/><!--Must-->
+            <TextArea 		styleClass="gridPaneTextArea" fx:id="mustTxt" editable="false"	prefRowCount="2" 	GridPane.columnIndex="1" GridPane.rowIndex="6" GridPane.columnSpan="2"/>
+            
+            <Label 			styleClass="gridPaneLabel" text="Uniques" 											GridPane.columnIndex="0" GridPane.rowIndex="7" GridPane.columnSpan="1"/><!--Uniques-->
+            <TextField   	styleClass="gridPaneTextField" fx:id="uniquesTxt" editable="false"					GridPane.columnIndex="1" GridPane.rowIndex="7" GridPane.columnSpan="2"/>
+            
+         </children>
+</GridPane>

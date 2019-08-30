@@ -1,0 +1,35 @@
+.connectionPane {
+	-fx-padding : 0 5 0 10;/* top, right, bottom, and left */
+	-fx-border-width: 0px;
+    -fx-border-color: red;
+	-fx-spacing : 12;
+}
+
+.connectTxt {
+	
+  -fx-text-fill : white;
+
+  -fx-border-width: 0px;
+  -fx-max-height: 29px;
+  
+}
+
+
+.jfx-text-field
+{
+    -jfx-focus-color: #373847;
+    -jfx-unfocus-color: #373847;
+}
+
+
+.connectBtn {
+	-fx-background-color: transparent;
+	-fx-max-height: 29px;
+}
+
+
+.keyCheck {
+  -fx-text-fill : white;
+  -fx-border-width: 0px;
+  -fx-max-height: 29px;
+}

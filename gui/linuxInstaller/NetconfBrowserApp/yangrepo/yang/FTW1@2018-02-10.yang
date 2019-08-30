@@ -1,0 +1,60 @@
+module FTW1 {
+
+    yang-version 1;
+
+    namespace "urn:ietf:params:xml:ns:yang:FTW1";
+
+    prefix FTW1;
+
+    organization "FTW1 Description";
+
+    contact "email: user@org.com";
+
+    description "This module is a basic yang file";
+
+    revision "2018-02-10" {
+      description "Initial revision.";
+      reference "RFC XXX";
+    }
+    
+    container devices {
+
+	    leaf count {
+	      	type string;
+	      	config false;
+	      	description "Devices Counter";
+	    }
+
+	   leaf-list device {
+		 	type string;
+		 	description "Device Model";
+	    }
+
+		list configurations {
+		     key "name";
+		     description "Device config";
+	
+		     leaf name {
+				type string;	      
+				description "Config Name";
+		     }
+		     leaf age {
+				type string;	      
+				description "Config Value";
+		     }
+		}	    	    
+   }
+
+
+container cities {
+
+	    leaf area {
+	      	type string;
+	      	config false;
+	      	description "Test";
+	    }	       	    
+   }
+	
+
+}
+

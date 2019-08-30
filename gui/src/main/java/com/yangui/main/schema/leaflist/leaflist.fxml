@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane fx:id="leaflistPane" stylesheets="@leaflist.css" hgap="1" vgap="10" fx:controller="com.yangui.main.schema.leaflist.LeaflistPresenter" xmlns="http://javafx.com/javafx/8.0.151" xmlns:fx="http://javafx.com/fxml/1">
+        <columnConstraints>
+          <ColumnConstraints hgrow="NEVER" />
+          <ColumnConstraints hgrow="NEVER" />
+          <ColumnConstraints hgrow="ALWAYS" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints vgrow="NEVER" />
+          <RowConstraints vgrow="NEVER" />
+          <RowConstraints vgrow="NEVER" />
+          <RowConstraints vgrow="NEVER" />
+          <RowConstraints vgrow="NEVER" />
+          <RowConstraints vgrow="NEVER" />
+          <RowConstraints vgrow="NEVER" />
+          <RowConstraints vgrow="NEVER" />
+          <RowConstraints vgrow="NEVER" />
+          <RowConstraints vgrow="NEVER" />
+          <RowConstraints vgrow="NEVER" />
+          <RowConstraints vgrow="NEVER" />
+          <RowConstraints vgrow="NEVER" />
+          <RowConstraints vgrow="NEVER" />
+          <RowConstraints vgrow="NEVER" />
+        </rowConstraints>
+         <children>
+            <Label 		 text=""	 																			GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="1"></Label><!--Empty Header--> 
+            <Label 		 text=""   																    			GridPane.columnIndex="1" GridPane.rowIndex="0" GridPane.columnSpan="2"></Label><!--Empty Header --> 
+            
+            
+            <Label 			styleClass="gridPaneLabel, boldFont" text="Property" 								GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.columnSpan="1"/><!--Property Header--> 
+            <Label 			styleClass="gridPaneLabel, boldFont" text="Value" 									GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.columnSpan="2"/><!--Value Header--> 
+            
+            <Label 			styleClass="gridPaneLabel" text="Local Name" 										GridPane.columnIndex="0" GridPane.rowIndex="2" GridPane.columnSpan="1"/><!--Local Name-->
+            <TextField  	styleClass="gridPaneTextField" fx:id="localNameTxt" editable="false" 				GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.columnSpan="2"/>
+            
+            <Label 			styleClass="gridPaneLabel" text="Node Type" 										GridPane.columnIndex="0" GridPane.rowIndex="3" GridPane.columnSpan="1"/><!--node type-->
+            <TextField   	styleClass="gridPaneTextField" fx:id="nodeTypeTxt" editable="false"					GridPane.columnIndex="1" GridPane.rowIndex="3" GridPane.columnSpan="2"/>
+            
+            <Label 			styleClass="gridPaneLabel" text="XPath"		 										GridPane.columnIndex="0" GridPane.rowIndex="4" GridPane.columnSpan="1"/><!--xpath-->
+            <TextArea  		styleClass="gridPaneTextArea" fx:id="xpathTxt" editable="false" prefRowCount="1"	GridPane.columnIndex="1" GridPane.rowIndex="4" GridPane.columnSpan="2"/>
+            
+            <Label 			styleClass="gridPaneLabel" text="Status" 											GridPane.columnIndex="0" GridPane.rowIndex="5" GridPane.columnSpan="1"/><!--status-->
+            <TextField  	styleClass="gridPaneTextField" fx:id="statusTxt" editable="false"		 			GridPane.columnIndex="1" GridPane.rowIndex="5" GridPane.columnSpan="2"/>
+            
+            <Label 			styleClass="gridPaneLabel" text="Description" 										GridPane.columnIndex="0" GridPane.rowIndex="6" GridPane.columnSpan="1"/><!--description-->
+            <TextArea 		styleClass="gridPaneTextArea" fx:id="descriptionTxt" editable="false" prefRowCount="2" 	GridPane.columnIndex="1" GridPane.rowIndex="6" GridPane.columnSpan="2"/>
+            
+            <Label 			styleClass="gridPaneLabel" text="Reference" 										GridPane.columnIndex="0" GridPane.rowIndex="7" GridPane.columnSpan="1"/><!--reference-->
+            <TextField   	styleClass="gridPaneTextField" fx:id="referenceTxt" editable="false"				GridPane.columnIndex="1" GridPane.rowIndex="7" GridPane.columnSpan="2"/>
+            
+            <HBox 			style="-fx-border-color: magenta;-fx-border-width : 0.1;" 							GridPane.columnIndex="0" GridPane.rowIndex="8" GridPane.columnSpan="1">
+	            <Label 		styleClass="gridPaneLabel" text="isConfig"/>
+            </HBox>
+            
+             <HBox 			style="-fx-border-color: magenta;-fx-border-width : 0.1;" 							GridPane.columnIndex="1" GridPane.rowIndex="8" GridPane.columnSpan="2">
+                <CheckBox 	styleClass="gridPaneCheckBox" fx:id="isConfigCheck" disable="true" />
+             	<Label 		styleClass="gridPaneLabel" text=" "/>
+	            <Label 		styleClass="gridPaneLabel" text="isAddedByUses"/>
+	            <CheckBox 	styleClass="gridPaneCheckBox" fx:id="isAddedByUsesCheck" disable="true" />
+            </HBox>
+            
+             <HBox 			style="-fx-border-color: magenta;-fx-border-width : 0.1;" 							GridPane.columnIndex="0" GridPane.rowIndex="9" GridPane.columnSpan="1">
+	            <Label 		styleClass="gridPaneLabel" text="isMandatory"/>
+            </HBox>
+            
+             <HBox 			style="-fx-border-color: magenta;-fx-border-width : 0.1;" 							GridPane.columnIndex="1" GridPane.rowIndex="9" GridPane.columnSpan="2">
+				<CheckBox 	styleClass="gridPaneCheckBox" fx:id="isMandatoryCheck" disable="true" />             	
+             	<Label 		styleClass="gridPaneLabel" text=" "/>
+	            <Label 		styleClass="gridPaneLabel" text="isAugmenting"/>
+	            <CheckBox 	styleClass="gridPaneCheckBox" fx:id="isAugmentingCheck" disable="true" />
+            </HBox>
+            
+            
+            <Label 			styleClass="gridPaneLabel" text="Leaflist Type" 									GridPane.columnIndex="0" GridPane.rowIndex="10" GridPane.columnSpan="1"/><!--leaflist type-->
+            <TextArea   	styleClass="gridPaneTextArea"  fx:id="leaflistTypeTxt" editable="false"	prefRowCount="4"	GridPane.columnIndex="1" GridPane.rowIndex="10" GridPane.columnSpan="2"/>
+            
+            <Label 			styleClass="gridPaneLabel" text="isUserOrdered" 									GridPane.columnIndex="0" GridPane.rowIndex="11" GridPane.columnSpan="1"/><!--isUserOrdered-->
+            <HBox 			style="-fx-border-color: magenta;-fx-border-width : 0.1;" 							GridPane.columnIndex="1" GridPane.rowIndex="11" GridPane.columnSpan="2">
+				<CheckBox 	styleClass="gridPaneCheckBox" fx:id="isUserOrderedCheck" disable="true" />             	
+			</HBox>
+            
+            
+            <Label 			styleClass="gridPaneLabel" text="When" 												GridPane.columnIndex="0" GridPane.rowIndex="12" GridPane.columnSpan="1"/><!--when-->
+            <TextField   	styleClass="gridPaneTextField" fx:id="whenTxt" editable="false"						GridPane.columnIndex="1" GridPane.rowIndex="12" GridPane.columnSpan="2"/>
+            
+            <Label 			styleClass="gridPaneLabel" text="Max Elements" 										GridPane.columnIndex="0" GridPane.rowIndex="13" GridPane.columnSpan="1"/><!--maxElements-->
+            <TextField   	styleClass="gridPaneTextField" fx:id="maxElementsTxt" editable="false"				GridPane.columnIndex="1" GridPane.rowIndex="13" GridPane.columnSpan="2"/>
+            
+            <Label 			styleClass="gridPaneLabel" text="Min Elements" 										GridPane.columnIndex="0" GridPane.rowIndex="14" GridPane.columnSpan="1"/><!--minElements-->
+            <TextField   	styleClass="gridPaneTextField" fx:id="minElementsTxt" editable="false"				GridPane.columnIndex="1" GridPane.rowIndex="14" GridPane.columnSpan="2"/>
+            
+         </children>
+</GridPane>

@@ -1,0 +1,156 @@
+.mygridStyle Line {
+  -fx-stroke   : gray;
+  -fx-stroke-width   : 0.1;
+}
+.buttonIcon {
+	-fx-fill: white;
+}
+
+.importPane{
+	-fx-background-color: linear-gradient(to bottom, #434453, #383948);
+}
+
+.importBtn1 {
+   -fx-min-width : 160;
+
+  -fx-max-width : Infinity;
+  -fx-max-height : Infinity;
+  -fx-font-family : 'Roboto Bold';	
+  -fx-font-size: 11pt;/* Why is it not loaded from main.css ??? */
+}
+
+.importBtn {
+  -fx-min-height : 36;
+  -fx-min-width : 120;
+  -fx-max-width : Infinity;
+  -fx-max-height : Infinity;
+  
+  -fx-font-family: 'SourceSansPro SemiBold';
+
+  -fx-text-fill : white;
+  -fx-background-color : #434453;
+  -fx-background-radius: 18px;
+
+  -fx-border-radius: 18px;
+  -fx-border-width: 2px;
+  /*-fx-border-color: #00b7c3;*//*#ffb900 */
+  
+  -jfx-button-type: RAISED;
+}
+
+.importTable {
+ -fx-min-width : 180;
+ -fx-min-height : 100;
+ -fx-padding : 10 0 10 0;
+}
+
+.importTile1 {
+ -fx-alignment : center;
+ -fx-hgap : 7;
+ -fx-vgap : 7;
+ -fx-min-height : 50;
+ -fx-min-width : 180;
+ -fx-padding : 14 10 14 10;
+ 
+}
+
+.importTile {
+ -fx-alignment : center;
+ -fx-hgap : 20;
+ -fx-vgap : 10;
+ -fx-min-height : 69;
+ -fx-min-width : 240;
+ /*-fx-padding : 0 20 0 20;*/ /* top, right, bottom, and left */
+ 
+  -fx-background-color: #373847 ;
+  -fx-background-radius: 300 300 300 300;
+  -fx-border-radius: 300 300 300 300;
+}
+
+.showBorder {
+  -fx-border-width : 1;
+  -fx-border-color : red;
+}
+
+.errorRow {
+    -fx-background-color: brown;
+    -fx-background-insets: 0, 1, 2;
+    -fx-background: -fx-accent;
+    -fx-text-fill: -fx-selection-bar-text;
+}
+
+.table-view .column-header,
+.table-view .filler,
+.table-view > .column-header-background > .show-hide-columns-button,
+.table-view:constrained-resize .filler {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0, 0 1 1 0, 1 2 2 1;
+    -fx-font-weight: bold;
+    -fx-size: 2em;
+    -fx-text-fill: -fx-selection-bar-text;
+    -fx-padding: 0.166667em;
+}
+
+.table-view{
+   -fx-background-color: transparent;
+   -fx-padding : 15 0 0 16;
+}
+
+.table-view:focused{
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+.table-view .table-cell{
+    -fx-text-fill: white;
+    -fx-alignment: center;
+    
+     -fx-padding : 10 0 10 0;/* top, right, bottom, and left */
+}
+
+.table-row-cell{
+  -fx-text-fill : white;
+  -fx-background-color: #373847;
+  -fx-border-color: transparent;
+  -fx-table-cell-border-color: transparent;
+} 
+
+.table-row-cell:odd{
+ 	-fx-background-color: transparent;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */  
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #585865;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}
+
+.table-view > .virtual-flow > .scroll-bar:vertical,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track-background, 
+.table-view > .virtual-flow > .scroll-bar:horizontal,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track-background {
+    -fx-background-color: transparent;
+}
+
+.table-view > .virtual-flow > .scroll-bar > .increment-button, 
+.table-view > .virtual-flow > .scroll-bar > .decrement-button {
+    -fx-opacity: 0;
+}

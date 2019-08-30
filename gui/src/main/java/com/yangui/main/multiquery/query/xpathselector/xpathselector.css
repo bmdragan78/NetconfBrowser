@@ -1,0 +1,92 @@
+.robotoBold{
+	-fx-font-family: 'Roboto Bold';	
+}
+
+.buttonIcon {
+	-fx-fill: white;
+}
+
+.selectorPane {
+	-fx-background-color: linear-gradient(to bottom, #434453, #383948);
+}
+
+
+.wizardTile {
+ -fx-alignment : center;
+ -fx-hgap : 20;
+ -fx-vgap : 10;
+ -fx-min-height : 69;
+ -fx-min-width : 240;
+ -fx-padding : 0 10 0 10;
+ 
+  -fx-background-color: #373847 ;
+  -fx-background-radius: 300 300 300 300;
+  -fx-border-radius: 300 300 300 300;
+}
+
+.wizardBtn {
+  -fx-min-height : 36;
+  -fx-min-width : 120;
+  -fx-max-width : Infinity;
+  -fx-max-height : Infinity;
+  
+  -fx-font-family: 'SourceSansPro SemiBold';
+
+  -fx-text-fill : white;
+  -fx-background-color : #434453;
+  -fx-background-radius: 18px;
+
+  -fx-border-radius: 18px;
+  -fx-border-width: 2px;
+  /*-fx-border-color: #00b7c3;*//*#ffb900 */
+  
+  -jfx-button-type: RAISED;
+}
+
+
+.schemaTree {
+ -fx-min-width : 180;
+ -fx-min-height : 100;
+ -fx-background-color: transparent;
+ -fx-padding : 15 0 8 15;
+}
+
+.xpathText{
+	/*-fx-background-color: #84858e;*/
+	-fx-background-color: transparent;
+	-fx-border-width: 0;
+	-fx-text-fill: white;
+	-fx-font-weight: bold;
+	
+	 -fx-pref-height : 34;
+	 -fx-max-height : 34;
+}
+
+
+.tree-cell{
+  -fx-text-fill : white;
+  -fx-background-color: transparent ;
+  -fx-padding : 5 0 5 0;/* top, right, bottom, and left */
+} 
+
+.tree-cell:selected {
+     -fx-background-color: #585865 ;
+}
+
+.tree-cell > .tree-disclosure-node > .arrow {
+    -fx-background-color: #afaeb4;
+    -fx-scale-x: 1.4;
+    -fx-scale-y: 1.4;
+    -fx-scale-z: 1.4;
+}
+
+.tree-cell:expanded > .tree-disclosure-node > .arrow {
+    -fx-background-color: #afaeb4;
+    -fx-scale-x: 1.4;
+    -fx-scale-y: 1.4;
+    -fx-scale-z: 1.4;
+}
+
+
+
+

@@ -1,0 +1,132 @@
+
+.mainPane {
+	/*-fx-background-color: linear-gradient(to bottom, #434453, #383948);*/
+	-fx-background-color: #373847;
+}
+
+.borderPane {
+	-fx-background-color: #373847;
+	-fx-border-width: 0 0 0 0; 
+	-fx-border-color: grey;
+}
+
+.tabPane {
+	-fx-background-color: linear-gradient(to bottom, #434453, #383948);
+}
+
+
+.jfx-tab-pane .headers-region {
+    -fx-background-color: transparent;
+}
+
+ .jfx-tab-pane .tab-header-background {
+    -fx-background-color: transparent;
+}
+
+.jfx-tab-pane .tab-selected-line {
+    -fx-background-color: white;
+    -fx-pref-height: 3;
+}
+
+.jfx-tab-pane .tab-header-area .jfx-rippler{
+    -fx-rippler-fill: white;
+    -fx-cursor:hand;
+}
+
+.jfx-tab-pane .tab .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: white;
+    -fx-cursor:hand;
+    -fx-padding : 24 38 18 38;
+    -fx-font-weight: normal;
+    
+    -fx-border-width: 0 0 1 0; -fx-border-color: #585865;
+}
+
+.jfx-tab-pane .tab:selected .tab-label{
+	 -fx-font-weight: bold;
+}
+
+
+.headerPane {
+	-fx-padding : 10 24 18 24;/* top, right, bottom, and left */
+	-fx-spacing : 24;
+	-fx-background-color: #373847;
+}
+
+
+.logoPane {
+	-fx-spacing : 15;
+}
+
+
+.logoBigText {
+	-fx-text-fill: white;
+	-fx-font-size: 18px;
+	-fx-font-weight: bold;
+}
+
+.logoSmallText {
+	-fx-text-fill: white;
+	-fx-font-size: 13px;
+}
+
+
+.logoVBox {
+	-fx-spacing: -2px;
+}
+
+
+#logAreaId {
+	-fx-background-color: transparent;
+	-fx-padding : 7 24 7 24;
+	
+}
+
+#logAreaId.styled-text-area .text {
+    -fx-fill: #c6c6c6;
+    
+}
+
+
+#logAreaTitleId{	
+	-fx-text-fill: white;
+	-fx-background-color: #2d2e3f;
+	-fx-font-weight: bold;
+	-fx-border-width: 0 0 0 0;
+	-fx-border-color: white;
+	-fx-padding : 7 24 7 24;
+}
+
+.split-pane > .split-pane-divider {
+    -fx-padding: 0 2 0 2;
+    -fx-background-color: grey ;
+}
+
+/* .scroll-bar:vertical  {
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+     -fx-background-color: #d8dde2 ;
+}
+
+.scroll-bar:vertical > .thumb {
+    -fx-background-color: #585865;
+}*/
+
+.scroll-bar  {
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+    -fx-background-color: transparent ;
+}
+
+.scroll-bar > .thumb {
+    -fx-background-color: #585865;
+}
+
+
+.caret {
+    -fx-stroke: #e74856;
+    -fx-stroke-width: 5px;
+}
+
+

@@ -1,0 +1,8 @@
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+
+<HBox fx:id="getopPane" spacing="14" alignment="CENTER" maxHeight="Infinity" maxWidth="Infinity" stylesheets="@closeop.css" fx:controller="com.yangui.main.multiquery.query.closeop.CloseopPresenter" xmlns="http://javafx.com/javafx/8.0.151" xmlns:fx="http://javafx.com/fxml/1">
+	<children>
+		<Label styleClass="gridPaneLabel" text=""/>
+	</children>
+</HBox>
