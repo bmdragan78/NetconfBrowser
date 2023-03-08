@@ -23,30 +23,47 @@ For Opendaylight you must enable northbound Netconf by executing "feature:instal
 - Standard Netconf queries integrated in UI. 
 - [Yang Validator](/resources/QueryView2.png "Yang Validator") for query XML with error line number and error message reporting.
 
-## Install on Ubuntu/MacOS/Win From Tar (Only For Java 8)
-```
-apt-get install openjdk-8-jdk
-apt-get install wget
-apt-get install git-core
-apt-get install maven
-
-sudo curl -o NetconfBrowserApp-1.0.tar.gz -L https://raw.githubusercontent.com/bmdragan78/NetconfBrowser/master/resources/NetconfBrowserApp-1.0.tar.gz
-tar -xf NetconfBrowserApp-1.0.tar.gz
-cd NetconfBrowserApp/bin
-sudo ./start.sh
-or
-sudo ./start.bat (win)
-```
 ## Install Source 
+- Install Java 17 from https://jdk.java.net/archive/
+- Install JavaFX 15 SDK from https://gluonhq.com/products/javafx/
 
 ```
 cd ~
 git clone https://github.com/bmdragan78/NetconfBrowser.git
 cd NetconfBrowser
 nano ui/src/main/java/resources/application.conf #update folder paths to     /home/myuser/NetconfBrowser/ui/linuxInstaller/NetconfBrowserApp/yangrepo/yang||template||logs
-mvn install
+mvn clean install -Dcheckstyle.skip -DskipTests=true
 cd ui/target/classes/
-java com.yang.ui.App
+
+java
+--module-path
+/home/draganb/YangBrowser/javafx-sdk-15/lib
+--add-modules
+javafx.controls,javafx.fxml,javafx.graphics
+--add-opens=javafx.graphics/com.sun.javafx.scene.text=ALL-UNNAMED
+--add-opens=javafx.graphics/javafx.scene.text=ALL-UNNAMED
+--add-opens=javafx.graphics/com.sun.javafx.text=ALL-UNNAMED
+--add-opens=javafx.graphics/com.sun.javafx.geom=ALL-UNNAMED
+--add-exports=javafx.graphics/com.sun.javafx.application=ALL-UNNAMED
+--add-exports=javafx.controls/com.sun.javafx.scene.control.behavior=ALL-UNNAMED
+--add-exports=javafx.controls/com.sun.javafx.scene.control=ALL-UNNAMED
+--add-exports=javafx.graphics/com.sun.javafx.sg.prism=ALL-UNNAMED
+--add-exports=javafx.graphics/com.sun.javafx.scene=ALL-UNNAMED
+--add-exports=javafx.graphics/com.sun.javafx.util=ALL-UNNAMED
+--add-exports=javafx.base/com.sun.javafx.logging=ALL-UNNAMED
+--add-exports=javafx.graphics/com.sun.prism=ALL-UNNAMED
+--add-exports=javafx.graphics/com.sun.glass.ui=ALL-UNNAMED
+--add-exports=javafx.graphics/com.sun.javafx.geom.transform=ALL-UNNAMED
+--add-exports=javafx.graphics/com.sun.javafx.tk=ALL-UNNAMED
+--add-exports=javafx.graphics/com.sun.glass.utils=ALL-UNNAMED
+--add-exports=com.yang.ui/com.yang.ui.fxmisc.richtext=ALL-UNNAMED
+--add-exports=org.opendaylight.yangtools.yang.parser.rfc7950/org.opendaylight.yangtools.yang.parser.rfc7950.antlr=ALL-UNNAMED
+-Dsun.awt.disablegrab=true
+-Dprism.verbose=false
+-Djavafx.verbose=false
+-Dprism.lcdtext=false
+-Dprism.text=t2k 
+com.yang.ui.App
 ```
 
 To generate tar archive from source
@@ -107,7 +124,7 @@ To run demo:
 
 - Juniper Netconf-Java  			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; https://github.com/Juniper/netconf-java
 
-- Opendaylight Yang Tools			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; https://docs.opendaylight.org/en/stable-fluorine/developer-guide/yang-tools.html
+- Opendaylight Yang Tools			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; https://docs.opendaylight.org/en/stable-sulfur/release-notes/projects/yangtools.html
 
 ## License
 
