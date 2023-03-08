@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.control.Button?>
+<?import org.fxmisc.flowless.VirtualizedScrollPane?>
+<?import com.yang.ui.codearea.fxmisc.richtext.CodeArea?>
+<?import javafx.scene.layout.TilePane?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.control.TreeView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.VBox?>
+
+  
+    
+<VBox fx:id="selectorPane" styleClass="selectorPane" stylesheets="@xpathselector.css" fx:controller="com.yang.ui.multiquery.query.xpathselector.XpathSelectorPresenter" xmlns="http://javafx.com/javafx/8.0.151" xmlns:fx="http://javafx.com/fxml/1">
+         
+	<TilePane fx:id="wizardTile" styleClass="wizardTile" >		<!--Ok/Cancel Buttons -->
+		<VBox.margin>
+				<Insets bottom="0" left="450" right="450" top="10" />
+		</VBox.margin>
+     	<JFXButton styleClass="wizardBtn" fx:id="cancelBtn" 	style="-fx-border-color: #e74856;"	text="CLOSE" 	onAction="#cancelAction">	 <graphic><MaterialDesignIconView styleClass="buttonIcon"  glyphName="CLOSE" /></graphic></JFXButton>
+      	<JFXButton styleClass="wizardBtn" fx:id="okBtn" 		style="-fx-border-color: #00b7c3;"  text="OK" 		onAction="#okAction">		 <graphic><MaterialDesignIconView styleClass="buttonIcon"  glyphName="FILE_FIND" /></graphic></JFXButton>
+    </TilePane>
+         
+    <JFXTextField styleClass="xpathText"  fx:id="selectedXPath">
+    	<VBox.margin>
+				<Insets bottom="0" left="16" right="0" top="0" />
+		</VBox.margin>
+	</JFXTextField>
+         
+    <TreeView styleClass="schemaTree"  fx:id="schemaTreeView" VBox.vgrow="ALWAYS"/>
+</VBox>

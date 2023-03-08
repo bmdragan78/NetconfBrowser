@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import org.fxmisc.flowless.VirtualizedScrollPane?>
+<?import com.yang.ui.codearea.fxmisc.richtext.StyleClassedTextArea?>
+<?import javafx.scene.control.TextField?>
+
+
+<GridPane fx:id="infoPane" stylesheets="@info.css" hgap="1" vgap="10" xmlns="http://javafx.com/javafx/8.0.151" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.yang.ui.schema.info.InfoPresenter">
+        <columnConstraints>
+          <ColumnConstraints hgrow="NEVER"/>
+          <ColumnConstraints hgrow="NEVER"/>
+          <ColumnConstraints hgrow="ALWAYS"/>
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints vgrow="NEVER" />
+          <RowConstraints vgrow="NEVER" />
+          <RowConstraints vgrow="NEVER" />
+          <RowConstraints vgrow="NEVER" />
+          <RowConstraints vgrow="NEVER" />
+          <RowConstraints vgrow="NEVER" />
+          <RowConstraints vgrow="ALWAYS" />
+        </rowConstraints>
+         <children>
+         	<Label 		 text=""	 																		GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="1"></Label><!--Empty Header--> 
+            <Label 		 text=""   																			GridPane.columnIndex="1" GridPane.rowIndex="0" GridPane.columnSpan="2"></Label><!--Empty Header --> 
+            
+            <Label 		styleClass="gridPaneLabel, boldFont" text="Property"	 							GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.columnSpan="1"></Label><!--Property Header--> 
+            <Label 		styleClass="gridPaneLabel, boldFont" text="Value"   								GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.columnSpan="2"></Label><!--Value Header --> 
+            
+            <Label 		styleClass="gridPaneLabel" text="Yang Location"   							GridPane.columnIndex="0" GridPane.rowIndex="2" GridPane.columnSpan="1"></Label>  <!--Schema Location-->
+            <TextField 	styleClass="gridPaneTextField" fx:id="schemaFolder" editable="false"   				GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.columnSpan="2"/>
+            
+            <Label 		styleClass="gridPaneLabel" text="File Count"   								GridPane.columnIndex="0" GridPane.rowIndex="3" GridPane.columnSpan="1"></Label> <!--File Size-->
+            <TextField 	styleClass="gridPaneTextField" fx:id="fileCount" editable="false"          			GridPane.columnIndex="1" GridPane.rowIndex="3" GridPane.columnSpan="2"/>
+            
+            <Label 		styleClass="gridPaneLabel" text="File Size(bytes)"   								GridPane.columnIndex="0" GridPane.rowIndex="4" GridPane.columnSpan="1"></Label>  <!--File LastMod-->
+            <TextField 	styleClass="gridPaneTextField" fx:id="fileSize" editable="false"  					GridPane.columnIndex="1" GridPane.rowIndex="4" GridPane.columnSpan="2"/>
+           </children> 
+</GridPane>

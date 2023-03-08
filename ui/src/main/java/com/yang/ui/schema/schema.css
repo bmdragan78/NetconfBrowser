@@ -1,0 +1,199 @@
+
+.schemaContainer {
+	-fx-background-color: transparent ;
+}
+
+.schemaTree {
+ -fx-min-width : 180;
+ -fx-min-height : 100;
+ -fx-background-color: transparent;
+ -fx-padding : 15 0 8 15;
+}
+
+
+
+.tree-cell{
+  -fx-text-fill : white;
+  -fx-background-color: transparent ;
+  -fx-padding : 5 0 5 0;/* top, right, bottom, and left */
+} 
+
+.tree-cell:selected {
+     -fx-background-color: #585865 ;
+}
+
+.tree-cell > .tree-disclosure-node > .arrow {
+    -fx-background-color: #afaeb4;
+    -fx-scale-x: 1.4;
+    -fx-scale-y: 1.4;
+    -fx-scale-z: 1.4;
+}
+
+.tree-cell:expanded > .tree-disclosure-node > .arrow {
+    -fx-background-color: #afaeb4;
+    -fx-scale-x: 1.4;
+    -fx-scale-y: 1.4;
+    -fx-scale-z: 1.4;
+}
+
+.schemaTile {
+ -fx-alignment : center;
+ -fx-hgap : 20;
+ -fx-vgap : 10;
+ -fx-min-height : 69;
+ -fx-min-width : 200;
+ /*-fx-padding : 20 20 20 -20;*/ /* top, right, bottom, and left */
+ 
+ 
+ -fx-background-color: #373847 ;
+ -fx-background-radius: 0 300 300 0;
+ -fx-border-radius: 0 300 300 0;
+ 
+  /*-fx-border-width: 2px;
+  -fx-border-color: red;*/
+}
+
+.mainSchemaBtn {
+  -fx-min-height : 36;
+  -fx-min-width : 120;
+  -fx-max-width : Infinity;
+  -fx-max-height : Infinity;
+  -fx-font-family: 'SourceSansPro SemiBold';
+
+  -fx-text-fill : white;
+  -fx-background-color : #434453;
+  -fx-background-radius: 18px;
+
+  -fx-border-radius: 18px;
+  -fx-border-width: 2px;
+  /*-fx-border-color: #00b7c3;*//*#ffb900 */
+  
+  -jfx-button-type: RAISED;
+}
+
+
+.buttonIcon {
+	-fx-fill: white;
+}
+
+.moduleIcon {
+	-fx-fill: #f8e71c;
+}
+
+
+
+.sorticon {
+}
+
+
+.sortBtn {
+  -fx-min-height : 10;
+  -fx-min-width : 7;
+  -fx-max-width : Infinity;
+  -fx-max-height : Infinity;
+  -fx-font-family: 'SourceSansPro SemiBold';
+
+  -fx-text-fill : white;
+  -fx-background-color : #84858e;
+  -fx-background-radius: 4px;
+
+  -fx-border-radius: 4px;
+  -fx-border-width: 0px;
+  -fx-border-color: #00b7c3;
+  
+  -jfx-button-type: RAISED;
+  
+   -fx-pref-height : 34;
+   -fx-max-height : 34;
+   
+   -fx-pref-width : 34;
+   -fx-max-width : 34;
+}
+
+.filterTypeCmb{
+	
+	-fx-pref-height : 34;
+	-fx-max-height : 34;
+	
+   -fx-pref-width : 125;
+   -fx-max-width : 125;
+}
+
+.filterText{
+	-fx-background-color: #84858e;
+	-fx-border-width: 0;
+	-fx-text-fill: white;
+	
+	 -fx-pref-height : 34;
+	 -fx-max-height : 34;
+}
+
+
+.filterPane{
+	-fx-spacing : 24;
+	-fx-padding : 15 0 10 16;
+	
+	-fx-border-width: 0px;
+	-fx-border-color: red;
+}
+
+.filterLabel{
+    -fx-text-fill: white;
+    -fx-background-color: transparent;
+    
+    -fx-padding : 0 0 8 0;/* top, right, bottom, and left */
+    
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+.sourceCheck{/*NOT USED */
+	 -fx-padding : 0 0 0 0;
+	 -fx-border-width: 1px;
+	-fx-border-color: red;
+}
+
+.jfx-toggle-button {
+     -jfx-toggle-color: #009688;
+     -jfx-untoggle-color: #FAFAFA;
+     -jfx-toggle-line-color: #77C2BB;
+     -jfx-untoggle-line-color: #999999;
+     -jfx-size: 10.0;
+     -jfx-disable-visual-focus: false;
+     
+     -fx-padding : -10 -5 -5 -5;
+}
+
+.mygridStyle Line {
+  -fx-stroke   : gray;
+  -fx-stroke-width   : 0.1;
+}
+
+
+.boldFont{
+       -fx-font-weight: bold;
+}
+
+.regularFont{
+       -fx-font-weight: normal;
+}
+
+
+.scroll-bar:vertical  {
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+     -fx-background-color: transparent ;
+}
+
+.scroll-bar:vertical > .thumb {
+    -fx-background-color: #585865;
+}
+
+
+
+
+
+.styled-text-area .selection {
+    -fx-fill: pink;
+}
+

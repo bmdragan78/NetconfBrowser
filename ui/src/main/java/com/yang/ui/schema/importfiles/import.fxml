@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.Button?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.cell.*?> 
+<?import javafx.collections.*?> 
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialicons.MaterialIconView?>
+
+
+<VBox fx:id="importPane" styleClass="importPane" stylesheets="@import.css" fx:controller="com.yang.ui.schema.importfiles.ImportPresenter" xmlns="http://javafx.com/javafx/8.0.151" xmlns:fx="http://javafx.com/fxml/1">
+	<TilePane fx:id="importTile"  styleClass="importTile">
+	 	<VBox.margin>
+				<Insets bottom="10" left="450" right="450" top="10" />
+		</VBox.margin>
+      	<JFXButton styleClass="importBtn" fx:id="browseBtn" style="-fx-border-color: #00b7c3;" 	text="BROWSE"					onAction="#browseAction"><graphic><FontAwesomeIconView      styleClass="buttonIcon" glyphName="FOLDER_OPEN_ALT"/></graphic></JFXButton>
+      	<JFXButton styleClass="importBtn" fx:id="importBtn" style="-fx-border-color: #00b7c3;"	text="IMPORT" disable="true"   	onAction="#importAction"><graphic><MaterialIconView 		styleClass="buttonIcon" glyphName="SYSTEM_UPDATE_ALT" />	</graphic></JFXButton>
+      	<JFXButton styleClass="importBtn" fx:id="closeBtn" 	style="-fx-border-color: #e74856;"	text="CLOSE"  					onAction="#closeAction"><graphic><MaterialDesignIconView  	styleClass="buttonIcon" glyphName="CLOSE" />		</graphic></JFXButton>
+    </TilePane>
+    <TableView styleClass="importTable"    fx:id="importTable" 				editable="true" VBox.vgrow="ALWAYS">
+	    <columns>
+	          <TableColumn 							text="Source File" 		editable="false" prefWidth="300">
+	          	<cellValueFactory>
+	          		<PropertyValueFactory property="srcName"/>
+	        	</cellValueFactory>
+	          </TableColumn>
+	          <TableColumn fx:id="dstFileColumn" 	text="Destination File" editable="false" prefWidth="300">
+	          	<cellValueFactory>
+	          		<PropertyValueFactory property="dstName"/>
+	        	</cellValueFactory>
+	          </TableColumn>
+	          <TableColumn 							text="Status" 			editable="false" prefWidth="500">
+	          	<cellValueFactory>
+	          		<PropertyValueFactory property="status"/>
+	        	</cellValueFactory>
+	          </TableColumn>
+	          <TableColumn 							text="Action" 			editable="true" prefWidth="120">
+	          	<cellValueFactory>
+	          		<PropertyValueFactory property="action"/>
+	        	</cellValueFactory>
+	          </TableColumn>
+	     </columns>  
+	     <sortOrder>
+          <fx:reference source="dstFileColumn"/>
+     	</sortOrder>   
+    </TableView>
+</VBox>

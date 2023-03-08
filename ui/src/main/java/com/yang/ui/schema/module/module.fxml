@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane fx:id="modulePane" stylesheets="@module.css" hgap="1" vgap="10" fx:controller="com.yang.ui.schema.module.ModulePresenter" xmlns="http://javafx.com/javafx/8.0.151" xmlns:fx="http://javafx.com/fxml/1">
+        <columnConstraints>
+          <ColumnConstraints hgrow="NEVER"/>
+          <ColumnConstraints hgrow="NEVER"/>
+          <ColumnConstraints hgrow="ALWAYS"/>
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints vgrow="NEVER" />
+          <RowConstraints vgrow="NEVER" />
+          <RowConstraints vgrow="NEVER" />
+          <RowConstraints vgrow="NEVER" />
+          <RowConstraints vgrow="NEVER" />
+          <RowConstraints vgrow="NEVER" />
+          <RowConstraints vgrow="NEVER" />
+          <RowConstraints vgrow="NEVER" />
+          <RowConstraints vgrow="NEVER" />
+          <RowConstraints vgrow="ALWAYS" />
+        </rowConstraints>
+         <children>
+         	<Label 		 text=""	 																GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="1"></Label><!--Empty Header--> 
+            <Label 		 text=""   																    GridPane.columnIndex="1" GridPane.rowIndex="0" GridPane.columnSpan="2"></Label><!--Empty Header --> 
+         
+            <Label 		styleClass="gridPaneLabel, boldFont" text="Property"						GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.columnSpan="1"></Label><!--Property Header --> 
+            <Label 		styleClass="gridPaneLabel, boldFont" text="Value"							GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.columnSpan="2"></Label><!--Value Header--> 
+            
+            <Label 		styleClass="gridPaneLabel" text="Name"										GridPane.columnIndex="0" GridPane.rowIndex="2" GridPane.columnSpan="1"></Label>	<!--Module Name-->
+            <TextField  styleClass="gridPaneTextField" fx:id="moduleName" editable="false"   		GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.columnSpan="2"/>
+            
+            <Label 		styleClass="gridPaneLabel" text="Prefix"   									GridPane.columnIndex="0" GridPane.rowIndex="3" GridPane.columnSpan="1"></Label>	<!--Module Prefix-->
+            <TextField  styleClass="gridPaneTextField" fx:id="modulePrefix" editable="false"   		GridPane.columnIndex="1" GridPane.rowIndex="3" GridPane.columnSpan="2"/>
+            
+            <Label 		styleClass="gridPaneLabel" text="Namespace"									GridPane.columnIndex="0" GridPane.rowIndex="4" GridPane.columnSpan="1"></Label>	<!--Module Namespace-->
+            <TextField  styleClass="gridPaneTextField" fx:id="moduleNamespace" editable="false"  	GridPane.columnIndex="1" GridPane.rowIndex="4" GridPane.columnSpan="2"/>
+            
+            <Label 		styleClass="gridPaneLabel" text="Revision"  								GridPane.columnIndex="0" GridPane.rowIndex="5" GridPane.columnSpan="1"></Label> <!--Module Revision-->
+            <TextField 	styleClass="gridPaneTextField" fx:id="moduleRevision" editable="false"    	GridPane.columnIndex="1" GridPane.rowIndex="5" GridPane.columnSpan="2"/>
+            
+            <Label 		styleClass="gridPaneLabel" text="Organization"  							GridPane.columnIndex="0" GridPane.rowIndex="6" GridPane.columnSpan="1"></Label>	<!--Module Organization-->
+            <TextArea 	styleClass="gridPaneTextArea" fx:id="moduleOrganization" editable="false" prefRowCount="2"  	GridPane.columnIndex="1" GridPane.rowIndex="6" GridPane.columnSpan="2"/>
+            
+            <Label 		styleClass="gridPaneLabel" text="Contact"   								GridPane.columnIndex="0" GridPane.rowIndex="7" GridPane.columnSpan="1"></Label>	<!--Module Contact-->
+            <TextArea 	styleClass="gridPaneTextArea" fx:id="moduleContact" editable="false"  prefRowCount="2"   	GridPane.columnIndex="1" GridPane.rowIndex="7" GridPane.columnSpan="2"/>
+            
+            <Label 		styleClass="gridPaneLabel" text="Description"    							GridPane.columnIndex="0" GridPane.rowIndex="8" GridPane.columnSpan="1"></Label>	<!--Module Descriptions-->
+            <TextArea 	styleClass="gridPaneTextArea" fx:id="moduleDescription" editable="false"  prefRowCount="10" 	GridPane.columnIndex="1" GridPane.rowIndex="8" GridPane.columnSpan="2"/>
+            
+            <Label 		styleClass="gridPaneLabel" text="Features"    								GridPane.columnIndex="0" GridPane.rowIndex="9" GridPane.columnSpan="1"/>
+            <FlowPane  	fx:id="featuresPane" 									    				GridPane.columnIndex="1" GridPane.rowIndex="9" GridPane.columnSpan="2"/>
+         </children>
+</GridPane>

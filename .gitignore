@@ -11,6 +11,12 @@
 *.jar
 .classpath
 
+
+.idea
+*.iws
+*.iml
+*.ipr
+
 /YWorks/
 /YWorks2/
 

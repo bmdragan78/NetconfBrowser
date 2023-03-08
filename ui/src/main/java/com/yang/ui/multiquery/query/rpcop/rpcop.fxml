@@ -1,0 +1,21 @@
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Tooltip?>
+
+<HBox fx:id="getopPane" spacing="14" alignment="CENTER" maxHeight="Infinity" maxWidth="Infinity" stylesheets="@rpcop.css" fx:controller="com.yang.ui.multiquery.query.rpcop.RpcopPresenter" xmlns="http://javafx.com/javafx/8.0.151" xmlns:fx="http://javafx.com/fxml/1">
+	<children>
+		<JFXButton fx:id="rpcBtn"  id="rpcBtn"	 text="RPC" 	onAction="#filterAction" styleClass="filterBtn"><graphic><MaterialDesignIconView glyphName="XML" styleClass="buttonIcon"/></graphic>
+		<tooltip><Tooltip text="Generate RPC"/></tooltip>
+		</JFXButton> 
+		<JFXButton fx:id="filterBtn" id="filterBtn" text="ANYXML"  onAction="#filterAction" styleClass="filterBtn"><graphic><FontAwesomeIconView glyphName="FILTER" styleClass="buttonIcon"/></graphic>
+		<tooltip><Tooltip text="Generate Anyxml Filter"/></tooltip>
+		</JFXButton> 
+		<JFXButton fx:id="configBtn"  id="configBtn" text="ANYXML"  onAction="#filterAction" styleClass="filterBtn"><graphic><MaterialDesignIconView glyphName="XAML" styleClass="buttonIcon"/></graphic>
+		<tooltip><Tooltip text="Generate Anyxml Payload"/></tooltip>
+		</JFXButton> 
+	</children>
+</HBox>

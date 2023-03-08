@@ -43,16 +43,16 @@ sudo ./start.bat (win)
 cd ~
 git clone https://github.com/bmdragan78/NetconfBrowser.git
 cd NetconfBrowser
-nano gui/src/main/java/resources/application.conf #update folder paths to     /home/myuser/NetconfBrowser/gui/linuxInstaller/NetconfBrowserApp/yangrepo/yang||template||logs
+nano ui/src/main/java/resources/application.conf #update folder paths to     /home/myuser/NetconfBrowser/ui/linuxInstaller/NetconfBrowserApp/yangrepo/yang||template||logs
 mvn install
-cd gui/target/classes/
-java com.yangui.gui.App
+cd ui/target/classes/
+java com.yang.ui.App
 ```
 
 To generate tar archive from source
 
 ```
-cd ~/NetconfBrowser/gui/linuxInstaller && sudo ./build_tar.sh
+cd ~/NetconfBrowser/ui/linuxInstaller && sudo ./build_tar.sh
 ```
 
 To create an Eclipse Project import "~/NetconfBrowser/pom.xml" as en existing Maven project.
